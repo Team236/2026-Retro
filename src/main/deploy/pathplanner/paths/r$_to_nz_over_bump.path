@@ -1,0 +1,196 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 3.0137710843373493,
+        "y": 2.352132530120481
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 2.787591467730336,
+        "y": 2.208459871955422
+      },
+      "isLocked": false,
+      "linkedName": "shoot-pose-double-nz"
+    },
+    {
+      "anchor": {
+        "x": 3.2323253012048188,
+        "y": 0.7239036144578312
+      },
+      "prevControl": {
+        "x": 2.6965457437741356,
+        "y": 0.847730552400009
+      },
+      "nextControl": {
+        "x": 5.112967189728957,
+        "y": 0.2892582025677609
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 6.073530120481928,
+        "y": 1.2812168674698796
+      },
+      "prevControl": {
+        "x": 5.979857346647646,
+        "y": 0.43158345221112715
+      },
+      "nextControl": {
+        "x": 6.1415790737462315,
+        "y": 1.8984363881495745
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 5.745698795180723,
+        "y": 2.406771084337349
+      },
+      "prevControl": {
+        "x": 5.767554216867469,
+        "y": 1.7838915662650607
+      },
+      "nextControl": {
+        "x": 5.682189311301171,
+        "y": 4.216791374904643
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 6.859686162624821,
+        "y": 2.695848787446506
+      },
+      "prevControl": {
+        "x": 7.580607782726488,
+        "y": 3.7051390555888393
+      },
+      "nextControl": {
+        "x": 6.406833095577745,
+        "y": 2.0618544935805994
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 5.41055634807418,
+        "y": 2.406771084337349
+      },
+      "prevControl": {
+        "x": 5.966918687589158,
+        "y": 2.3465049928673327
+      },
+      "nextControl": {
+        "x": 4.092197789510331,
+        "y": 2.5495778701991534
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 3.0137710843373493,
+        "y": 2.352132530120481
+      },
+      "prevControl": {
+        "x": 4.354746180155717,
+        "y": 2.6386692676554993
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "shoot-pose-double-nz"
+    }
+  ],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 0.5,
+      "rotationDegrees": 0.0
+    },
+    {
+      "waypointRelativePos": 1.6,
+      "rotationDegrees": 0.0
+    },
+    {
+      "waypointRelativePos": 2.33,
+      "rotationDegrees": 90.0
+    },
+    {
+      "waypointRelativePos": 2.9,
+      "rotationDegrees": 90.0
+    },
+    {
+      "waypointRelativePos": 3.986962190351991,
+      "rotationDegrees": 25.0
+    },
+    {
+      "waypointRelativePos": 5.0,
+      "rotationDegrees": 45.0
+    }
+  ],
+  "constraintZones": [
+    {
+      "name": "Constraints Zone",
+      "minWaypointRelativePos": 5.002098635886658,
+      "maxWaypointRelativePos": 5.745015739769139,
+      "constraints": {
+        "maxVelocity": 2.0,
+        "maxAcceleration": 3.0,
+        "maxAngularVelocity": 540.0,
+        "maxAngularAcceleration": 720.0,
+        "nominalVoltage": 12.0,
+        "unlimited": false
+      }
+    }
+  ],
+  "pointTowardsZones": [],
+  "eventMarkers": [
+    {
+      "name": "bin-out",
+      "waypointRelativePos": 0,
+      "endWaypointRelativePos": null,
+      "command": {
+        "type": "named",
+        "data": {
+          "name": "bin-out"
+        }
+      }
+    },
+    {
+      "name": "intake",
+      "waypointRelativePos": 1.0,
+      "endWaypointRelativePos": 5.0,
+      "command": {
+        "type": "named",
+        "data": {
+          "name": "intake"
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 46.42320484663315
+  },
+  "reversed": false,
+  "folder": "movement",
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": 46.42320484663315
+  },
+  "useDefaultConstraints": true
+}

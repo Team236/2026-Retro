@@ -1,0 +1,94 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "srt90_to_rbs$_over_bump_tower_shoot"
+          }
+        },
+        {
+          "type": "race",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "shoot"
+                }
+              },
+              {
+                "type": "wait",
+                "data": {
+                  "waitTime": 8.5
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "shake-target"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "rcs$close_to_tr0"
+                }
+              },
+              {
+                "type": "race",
+                "data": {
+                  "commands": [
+                    {
+                      "type": "wait",
+                      "data": {
+                        "waitTime": 1.5
+                      }
+                    },
+                    {
+                      "type": "named",
+                      "data": {
+                        "name": "prep-climber"
+                      }
+                    },
+                    {
+                      "type": "named",
+                      "data": {
+                        "name": "bin-zero"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "tr0_to_cr0"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "climb-l1-front"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": "New England COMP",
+  "choreoAuto": false
+}

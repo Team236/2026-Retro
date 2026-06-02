@@ -1,0 +1,132 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "race",
+          "data": {
+            "commands": [
+              {
+                "type": "wait",
+                "data": {
+                  "waitTime": 1.0
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "bin-out"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "startup-prep"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "slt-90_to_nbl-90_v"
+          }
+        },
+        {
+          "type": "race",
+          "data": {
+            "commands": [
+              {
+                "type": "sequential",
+                "data": {
+                  "commands": [
+                    {
+                      "type": "path",
+                      "data": {
+                        "pathName": "v_nbl-90_to_nbrcr-90_v"
+                      }
+                    },
+                    {
+                      "type": "path",
+                      "data": {
+                        "pathName": "v_nbrcr-90_to_lcs$_via_bump_and_zigzag"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "intake"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "race",
+          "data": {
+            "commands": [
+              {
+                "type": "wait",
+                "data": {
+                  "waitTime": 4.0
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "shoot"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "lcs$_to_tl0"
+          }
+        },
+        {
+          "type": "race",
+          "data": {
+            "commands": [
+              {
+                "type": "wait",
+                "data": {
+                  "waitTime": 1.2
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "prep-climber"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "tl0_to_cl0"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "climb-l1-front"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": "Game Ready Autos",
+  "choreoAuto": false
+}
