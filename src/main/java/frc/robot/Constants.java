@@ -1,30 +1,15 @@
 package frc.robot;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import com.ctre.phoenix6.controls.MotionMagicVoltage;
 import com.ctre.phoenix6.signals.InvertedValue;
 import com.ctre.phoenix6.signals.NeutralModeValue;
 import com.ctre.phoenix6.signals.SensorDirectionValue;
 import com.pathplanner.lib.config.PIDConstants;
-
 import frc.lib.util.SwerveModuleConstants;
-import edu.wpi.first.apriltag.AprilTag;
-import edu.wpi.first.apriltag.AprilTagFieldLayout;
-import edu.wpi.first.apriltag.AprilTagFields;
-import edu.wpi.first.apriltag.AprilTagPoseEstimate;
-import edu.wpi.first.math.geometry.Pose2d;
-import edu.wpi.first.math.geometry.Pose3d;
 import edu.wpi.first.math.geometry.Rotation2d;
 import edu.wpi.first.math.geometry.Translation2d;
-import edu.wpi.first.math.interpolation.InterpolatingDoubleTreeMap;
 import edu.wpi.first.math.kinematics.SwerveDriveKinematics;
 import edu.wpi.first.math.trajectory.TrapezoidProfile;
 import edu.wpi.first.math.util.Units;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.lib.util.COTSTalonFXSwerveConstants;
 
 public final class Constants {
@@ -61,14 +46,14 @@ public final class Constants {
 
   public static final class PathPlanner {
     public static final PIDConstants TRANSLATION_PID_CONSTANTS = new PIDConstants(10, 0.0, 0.0);
-    public static final PIDConstants ROTATION_PID_CONSTANTS = new PIDConstants(4, 0.0, 0.2); 
+    public static final PIDConstants ROTATION_PID_CONSTANTS = new PIDConstants(4, 0.0, 0.2);
   }
 
   public static final class Swerve {
     public static final int pigeonID = 1;
 
     public static final COTSTalonFXSwerveConstants chosenModule =
-       
+
         COTSTalonFXSwerveConstants.WCP.SwerveXFlipped
             .KrakenX60(COTSTalonFXSwerveConstants.WCP.SwerveXFlipped.driveRatios.X2_11);
 
@@ -124,7 +109,6 @@ public final class Constants {
 
     public static final NeutralModeValue angleNeutralMode = NeutralModeValue.Coast;
     public static final NeutralModeValue driveNeutralMode = NeutralModeValue.Brake;
-
 
     public static final class Mod0 {
       public static final int driveMotorID = 7;
@@ -205,13 +189,3 @@ public final class Constants {
     }
   }
 }
-
-/*
- * ROBO CONSTANTS FOR PATHPLANNER
- * Width: 27.5in, 0.6985m
- * Length: 27.5in, 0.6985m
- * LLForward: -8.5in, -0.2159m
- * LLSideways: 0in, 0m
- * LLUp: 20.5in, 0.5207m
- * LLPitch: 24deg
- */
