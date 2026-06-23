@@ -49,7 +49,7 @@ public class Swerve extends SubsystemBase {
     public double[] driveTargetingValues;
 
     public Swerve() {
-        gyro = new Pigeon2(Constants.Swerve.pigeonID, "usb");
+        gyro = new Pigeon2(Constants.Swerve.pigeonID, "rio");
         gyro.getConfigurator().apply(new Pigeon2Configuration());
         gyro.setYaw(0);
 

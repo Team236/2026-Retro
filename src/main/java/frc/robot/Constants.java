@@ -114,7 +114,7 @@ public final class Constants {
       public static final int driveMotorID = 7;
       public static final int angleMotorID = 6;
       public static final int canCoderID = 3;
-      public static final Rotation2d angleOffset = Rotation2d.fromDegrees(40.78);
+      public static final Rotation2d angleOffset = Rotation2d.fromDegrees(-106.96);
       public static final SwerveModuleConstants constants = new SwerveModuleConstants(driveMotorID, angleMotorID,
           canCoderID, angleOffset);
     }
@@ -123,7 +123,7 @@ public final class Constants {
       public static final int driveMotorID = 3;
       public static final int angleMotorID = 2;
       public static final int canCoderID = 1;
-      public static final Rotation2d angleOffset = Rotation2d.fromDegrees(-175.34);
+      public static final Rotation2d angleOffset = Rotation2d.fromDegrees(-115.31);
       public static final SwerveModuleConstants constants = new SwerveModuleConstants(driveMotorID, angleMotorID,
           canCoderID, angleOffset);
     }
@@ -132,7 +132,7 @@ public final class Constants {
       public static final int driveMotorID = 5;
       public static final int angleMotorID = 4;
       public static final int canCoderID = 2;
-      public static final Rotation2d angleOffset = Rotation2d.fromDegrees(67.32);
+      public static final Rotation2d angleOffset = Rotation2d.fromDegrees(-82.97);
       public static final SwerveModuleConstants constants = new SwerveModuleConstants(driveMotorID, angleMotorID,
           canCoderID, angleOffset);
     }
@@ -141,7 +141,7 @@ public final class Constants {
       public static final int driveMotorID = 1;
       public static final int angleMotorID = 0;
       public static final int canCoderID = 0;
-      public static final Rotation2d angleOffset = Rotation2d.fromDegrees(-74.44);
+      public static final Rotation2d angleOffset = Rotation2d.fromDegrees(-10.37);
       public static final SwerveModuleConstants constants = new SwerveModuleConstants(driveMotorID, angleMotorID,
           canCoderID, angleOffset);
     }
